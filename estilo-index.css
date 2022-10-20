@@ -1,0 +1,140 @@
+body{
+    
+    background-image: url(..//imagens/krct-LiS3-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    font-family: 'Amatic SC', monospace;
+    color: black;
+    font-size: 18px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+
+}
+
+.card-inicial{
+    background-color: #070d12;
+    width: 370px;
+    border: 2px solid #dda0dd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-inicial .minhas-infos{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;   
+    align-items: center; 
+    gap: 10px;
+}
+
+.card-inicial .minhas-infos img{
+    border-radius: 50px;
+    border: 4px solid #06c185	
+}
+
+.card-inicial .minhas-infos .nome{
+    font-size: 26px;
+    color: #06c185;
+}
+
+.card-inicial .minhas-infos .cargo{
+    font-size: 20px;
+    color: gray;
+}
+
+.card-inicial .conteudo{
+    margin-top: 15px;
+}
+
+.card-inicial .abas{
+    display: flex;
+}
+
+.card-inicial .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out; 
+
+}
+
+.card-inicial .abas img{
+    width: 30px;
+}
+.card-inicial .abas .aba.selecionado{
+    background-color:grey
+}
+
+.card-inicial .info-abas{
+    background-color: grey;
+}
+
+.card-inicial .abas .aba:hover{
+    background-color: grey;
+}
+
+.info-abas .info{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.info-abas .info.selecionado{
+    display: block;
+}
+
+.info-abas .sub-title{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.info-abas .descricao{
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.info-abas .descricao span{
+    color: aquamarine;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a{    
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.redes-sociais li a:hover{
+    opacity: 0.8;
+}
+
+.redes-sociais .github{
+    background-color: #06c185;
+}
+
+.redes-sociais .decidindo{
+    background-color: #8b008b;
+}
